@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Alert from 'react-bootstrap/Alert';
 import Date from '../assets/date.png'
 import './index.css';
+import { months } from '../utils/months';
 
 let upperDayLimit = 32;
 let lowerDayLimit = 1;
@@ -9,58 +10,6 @@ let upperMonthLimit = 12;
 let lowerMonthLimit = 1;
 let upperYearLimit = 2100;
 let lowerYearLimit = 1990;
-
-const months = [
-    {
-        num: 1,
-        nome: "Janeiro"
-    },
-    {
-        num: 2,
-        nome: "Feveveiro"
-    },
-    {
-        num: 3,
-        nome: "Março"
-    },
-    {
-        num: 4,
-        nome: "Abirl"
-    },
-    {
-        num: 5,
-        nome: "Maio"
-    },
-    {
-        num: 6,
-        nome: "Junho"
-    },
-    {
-        num: 7,
-        nome: "Julho"
-    },
-    {
-        num: 8,
-        nome: "Agosto"
-    },
-    {
-        num: 9,
-        nome: "Setembro"
-    },
-    {
-        num: 10,
-        nome: "Outubro"
-    },
-    {
-        num: 11,
-        nome: "Novembro"
-    },
-    {
-        num: 12,
-        nome: "Dezembro"
-    },
-
-]
 
 const Home = () => {
     const [medianaDate, setMedianaDate] = useState({
@@ -82,7 +31,6 @@ const Home = () => {
 
     }
     const handleUpperLimit = (type) => {
-        console.log("mediana date", medianaDate)
         if (type === 'day') {
             lowerDayLimit = medianaDate.day;
             setMedianaDate(prevState => ({ ...prevState, day: Math.trunc((upperDayLimit + lowerDayLimit) / 2) }))
@@ -96,11 +44,9 @@ const Home = () => {
             setMedianaDate(prevState => ({ ...prevState, year: Math.ceil((upperYearLimit + lowerYearLimit) / 2) }))
         }
         setCount(count + 1);
-        console.log("mediana date", medianaDate)
     }
 
     const handlelowerLimit = (type) => {
-        console.log("mediana date", medianaDate)
 
         if (type === 'day') {
             upperDayLimit = medianaDate.day;
@@ -115,7 +61,6 @@ const Home = () => {
             setMedianaDate(prevState => ({ ...prevState, year: Math.trunc((upperYearLimit + lowerYearLimit) / 2) }))
         }
         setCount(count + 1);
-        console.log("mediana date", medianaDate)
     }
 
     const handleMonth = () => {
