@@ -32,6 +32,7 @@ O projeto em questão trata-se de uma aplicação que faz uso da técnica de med
 
 ### Requisitos:
 - Npm: Versão 6+
+- Node: Versão 16+
 
 ## Uso 
 ### Passo 1:
@@ -50,7 +51,12 @@ npm start
 - O frontend faz uso da portas: http://localhost:3000, dessa forma certifique-se de que esteja livre para rodar a aplicação.
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+
+- Clique [aqui](assets/D&C_Date_Guessing.mp4) para baixar o vídeo.
+
+- Link para video no Youtube [aqui](https://youtu.be/ZAOLfC7Tvnw)
+
+- Caso nenhuma das opções esteja disponível, o vídeo encontrasse dentro do repositório no caminho "assets/D&C_Date_Guessing.mp4".
 
 
 
