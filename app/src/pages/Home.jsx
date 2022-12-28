@@ -21,17 +21,13 @@ const Home = () => {
     const [count, setCount] = useState(0);
 
     const handleInitialValues = () => {
-        setMedianaDate({
-            year: Math.trunc((upperYearLimit + lowerYearLimit) / 2),
-            month: Math.ceil((upperMonthLimit + lowerMonthLimit) / 2),
-            day: Math.ceil((upperDayLimit + lowerDayLimit) / 2),
-        });
         setCount(0);
         setRightDate(false);
-
+        window.location.reload();
     }
     const handleUpperLimit = (type) => {
         if (type === 'day') {
+            console.log("mediana", medianaDate)
             lowerDayLimit = medianaDate.day;
             setMedianaDate(prevState => ({ ...prevState, day: Math.trunc((upperDayLimit + lowerDayLimit) / 2) }))
         }
@@ -64,7 +60,7 @@ const Home = () => {
     }
 
     const handleMonth = () => {
-        const currentMont = (months.find(m => m.num == medianaDate.month)).nome;
+        const currentMont = (months.find(m => m.num === medianaDate.month)).nome;
         return currentMont
     }
 
