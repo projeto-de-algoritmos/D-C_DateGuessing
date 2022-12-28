@@ -1,41 +1,53 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# D&C_DateGuessing
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 04<br>
+**Conteúdo da Disciplina**: D&C<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 18/0028685  |  Victor Samuel dos Santos Lucas |
+| 17/0115500  |  Vinícius Vieira de Souza |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Este projeto tem como objetivo servir como base para implementação de algoritmos relacionados a estudos voltados ao conteúdo de Dividir e Conquistar (D&C).
+
+O projeto em questão trata-se de uma aplicação que faz uso da técnica de mediana das medianas dentro dos conceitos de dividir e conquistar para realizar uma busca e adivinhar uma data imaginada pelo usuário em um certo intervalo.
+
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+## - Tela Inicial
+
+<img src="assets/DateGuessing_Tela_Inicial.jpeg" width="500px"/>
+
+## - Tela apos procura de data
+<img src="assets/DateGuessing_Tela_SetDate.jpeg" width="500px"/>
+
+## - Tela após finalizar Date Guessing
+<img src="assets/DateGuessing_Tela_Finalizar.jpeg" width="500px"/>
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Javascript<br>
+**Framework**: React<br>
+
+### Requisitos:
+- Npm: Versão 6+
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+### Passo 1:
+No diretório /app acesse o terminal e execute o seguinte comando:
+```terminal
+npm i
+```
+
+### Passo 2:
+Ainda dentro do /app inicia a aplicação com:
+```terminal
+npm start
+```
+
+## OBS:
+- O frontend faz uso da portas: http://localhost:3000, dessa forma certifique-se de que esteja livre para rodar a aplicação.
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
